@@ -49,3 +49,20 @@ Attach specific goals to a particular phase of the build lifecycle. Example:
 ```
 
 This causes the simple mojo to be executed whenever Java code is compiled.
+
+## Parameters
+
+### Configuring Parameters in a Project
+
+Configuring a plugin in `pom.xml`. Example:
+
+```xml
+<plugin>
+  <groupId>com.tatsuyaoiw</groupId>
+  <artifactId>hello-maven-plugin</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <configuration>
+    <greeting>Welcome!</greeting>
+  </configuration>
+</plugin>
+```
